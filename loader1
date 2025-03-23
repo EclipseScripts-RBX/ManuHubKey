@@ -1,5 +1,5 @@
 local _0xA1B2C3=loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))() 
-local _0xD4E5F6="key: dev" 
+local _0xD4E5F6="key: dev" or "key : dev" or "Key : dev" or "key:dev" or "key :dev"
 local _0xA7B8C9=_0xA1B2C3:CreateWindow({Title="ManuHub Loader",SubTitle=nil,TabWidth=160,Size=UDim2.fromOffset(580,460),Acrylic=false,Theme="Darker",MinimizeKey=Enum.KeyCode.LeftControl}) 
 local _0xF1A2B3={Main=_0xA7B8C9:AddTab({Title="Key",Icon="box"})} 
 _0xA7B8C9:SelectTab(1) 
