@@ -1,0 +1,49 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "ManuHub Loader | Checkpoint 2",
+    SubTitle = nil,
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = false,
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Games", Icon = "box" })
+}
+
+Window:SelectTab(1)
+
+local Options = Fluent.Options
+
+Tabs.Main:AddButton({
+    Title = "discord",
+    Description = "join our Discord",
+    Callback = function()
+---@diagnostic disable-next-line: undefined-global
+        setclipboard("https://discord.gg/bwV8cp8ZnD")
+    end
+})
+
+Tabs.Main:AddButton({
+    Title = "universal",
+    Description = "Open Universal | ManuHub",
+    Callback = function()
+        local _0xA1B2C3="https://raw.githubusercontent.com/";local _0xD4E5F6="EclipseScripts-RBX/";local _0xA7B8C9="ManuHub/refs/heads/main/";local _0xD1E2F3="univ.lua";local _0xB9C0D1=_0xA1B2C3.._0xD4E5F6.._0xA7B8C9.._0xD1E2F3;local _3A4B5C6=loadstring(game:HttpGet(_0xB9C0D1))()
+        wait(1)
+        Fluent:Destroy()
+    end
+})
+
+Tabs.Main:AddButton({
+    Title = "BABFT",
+    Description = "build a boat for treasure",
+    Callback = function()
+        local _0xF1A2B3="https://raw.githubusercontent.com/";local _0xC4D5E6="EclipseScripts-RBX/";local _0xA7B8C9="ManuHub/refs/heads/main/";local _0xD1F2A3="babft.lua";local _B9C0D1=_0xF1A2B3.._0xC4D5E6.._0xA7B8C9.._0xD1F2A3;local _E3F4A5=loadstring(game:HttpGet(_B9C0D1))()
+        wait(1)
+        Fluent:Destroy()
+    end
+})
