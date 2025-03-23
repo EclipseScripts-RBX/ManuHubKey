@@ -1,0 +1,18 @@
+local _0xA1B2C3=loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))() 
+local _0xD4E5F6="key: dev" 
+local _0xA7B8C9=_0xA1B2C3:CreateWindow({Title="ManuHub Loader",SubTitle=nil,TabWidth=160,Size=UDim2.fromOffset(580,460),Acrylic=false,Theme="Darker",MinimizeKey=Enum.KeyCode.LeftControl}) 
+local _0xF1A2B3={Main=_0xA7B8C9:AddTab({Title="Key",Icon="box"})} 
+_0xA7B8C9:SelectTab(1) 
+local _0xE4F5G6=_0xA1B2C3.Options 
+local _0xC9D0E1="" 
+local _0xF7G8H9=_0xF1A2B3.Main:AddInput("Input",{Title="Key",Description="Insert key here",Default="",Placeholder="key: 0000-0000-0000-0000 (numbers and letters)",Numeric=false,Finished=false,Callback=function(_0xP1Q2R3) _0xC9D0E1=_0xP1Q2R3 end}) 
+_0xF1A2B3.Main:AddButton({Title="Check key",Description="check if key correct and continue",Callback=function() 
+if _0xC9D0E1==_0xD4E5F6 then 
+local _0xS2T3U4="https://raw.githubusercontent.com/";local _0xV5W6X7="EclipseScripts-RBX/";local _0xY7Z8A9="ManuHubKey/refs/heads/main/";local _0xB0C1D2="loader2";local _0xE3F4G5=_0xS2T3U4.._0xV5W6X7.._0xY7Z8A9.._0xB0C1D2;local _0xF6G7H8=loadstring(game:HttpGet(_0xE3F4G5))() 
+wait(1) 
+_0xA1B2C3:Destroy() 
+else 
+_0xA1B2C3:Notify({Title="WRONG KEY",Content="enter a correct key",SubContent="key: dev",Duration=5}) 
+end 
+end}) 
+_0xF1A2B3.Main:AddButton({Title="discord",Description="join our Discord",Callback=function() setclipboard("https://discord.gg/bwV8cp8ZnD") end})
